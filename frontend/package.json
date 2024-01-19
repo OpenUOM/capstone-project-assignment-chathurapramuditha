@@ -42,8 +42,7 @@
     "tslib": "^2.0.0",
     "uuid": "^9.0.1",
     "w3c-hr-time": "^1.0.2",
-    "zone.js": "^0.14.3",
-    "supertest": "latest_version"
+    "zone.js": "^0.14.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.0.10",
@@ -61,6 +60,7 @@
     "karma-jasmine": "^4.0.1",
     "karma-jasmine-html-reporter": "^1.6.0",
     "protractor": "^7.0.0",
+    "supertest": "^6.3.4",
     "testcafe": "^1.17.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
