@@ -5,6 +5,8 @@
   To learn more about this file see: https://angular.io/config/solution-tsconfig.
 */
 {
+  "$schema": "./tsconfig.schema.json",
+
   "files": [],
   "references": [
     {
@@ -16,5 +18,5 @@
     {
       "path": "./e2e/tsconfig.json"
     }
-]
+  ]
 }

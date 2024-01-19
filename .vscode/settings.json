@@ -1,0 +1,10 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/tsconfig.spec.json"
+            ],
+            "url": "./path/to/tsconfig.schema.json"
+        }
+    ]
+}
