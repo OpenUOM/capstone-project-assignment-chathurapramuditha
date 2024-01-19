@@ -1,12 +1,10 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  "$schema": "./tsconfig.schema.json",
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
     "types": [
-      "jasmine",
-      "node"
+      "jasmine"
     ]
   },
   "files": [
@@ -17,7 +15,8 @@
     "src/**/*.spec.ts",
     "src/**/*.d.ts"
   ],
-  "exclude": [
-    "node_modules/@types/node"
-  ]
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
 }
