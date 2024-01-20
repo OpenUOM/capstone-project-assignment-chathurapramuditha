@@ -70,22 +70,22 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "capstone-frontend:build",
-            "proxyConfig": "./proxy.conf.json"
+            "proxyConfig": "./proxy.conf.json",
+            "buildTarget": "capstone-frontend:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "capstone-frontend:build:production"
+              "buildTarget": "capstone-frontend:build:production"
             },
             "test": {
-              "browserTarget": "capstone-frontend:build:test"
+              "buildTarget": "capstone-frontend:build:test"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "capstone-frontend:build"
+            "buildTarget": "capstone-frontend:build"
           }
         },
         "test": {
