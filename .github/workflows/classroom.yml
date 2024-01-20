@@ -11,18 +11,12 @@ permissions:
 
 jobs:
   build:
-    name: Autograding 
+    name: Autograding
     runs-on: ubuntu-latest
     if: github.actor != 'github-classroom[bot]'
     steps:
-      - name: Checkout Repository  
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v3
         with:
-          node-version: 18
-
-      - name: Run Autograding
-        uses: education/autograding@v1
-
+           node-version: 16
+      - uses: actions/checkout@v4
+      - uses: education/autograding@v1
